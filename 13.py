@@ -20,22 +20,7 @@ def upbyrow(a):
         for j in range(0, len(a[0])):
             b.append(a[i][j])
     return b
-def upbycol(a):
-    b = []
-    for j in range(0, len(a[0])):
-        for i in range(0, len(a)):
-            b.append(a[i][j])
-    return b
-def downbyrow(b, w, h, d):
-    a = blank(w,h)
-    n = 0
-    n+=d 
-    for i in range(0, h):
-        for j in range(0, w):
-            a[i][j] = b[n]
-            n+=1
-            n = n % (w*h)
-    return a
+
 def downbycol(b, w, h, d):
     a = blank(w,h)
     n = 0
